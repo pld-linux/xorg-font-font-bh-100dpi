@@ -1,12 +1,12 @@
 Summary:	bh-100dpi font
 Summary(pl):	Font bh-100dpi
 Name:		xorg-font-font-bh-100dpi
-Version:	0.99.2
+Version:	1.0.0
 Release:	0.1
-License:	MIT
+License:	distributable (see COPYING)
 Group:		Fonts
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/font/font-bh-100dpi-%{version}.tar.bz2
-# Source0-md5:	1b6e610d7ed0848af5aed3f5fa18975a
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/font/font-bh-100dpi-%{version}.tar.bz2
+# Source0-md5:	e5592de74a5c04e3a2608800dd079197
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
