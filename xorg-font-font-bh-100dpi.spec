@@ -1,5 +1,5 @@
 Summary:	bh-100dpi font
-Summary(pl):	Font bh-100dpi
+Summary(pl.UTF-8):   Font bh-100dpi
 Name:		xorg-font-font-bh-100dpi
 Version:	1.0.0
 Release:	0.1
@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 bh-100dpi font.
 
-%description -l pl
+%description -l pl.UTF-8
 Font bh-100dpi.
 
 %prep
