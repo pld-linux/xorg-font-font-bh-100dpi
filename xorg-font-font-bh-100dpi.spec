@@ -1,4 +1,4 @@
-Summary:	Bigelow & Holmes Lucida 100dpi 100dpi bitmap fonts
+Summary:	Bigelow & Holmes Lucida 100dpi bitmap fonts
 Summary(pl.UTF-8):	Fonty bitmapowe 100dpi Bigelow & Holmes Lucida
 Name:		xorg-font-font-bh-100dpi
 Version:	1.0.0
@@ -23,7 +23,7 @@ Requires:	xorg-font-font-alias >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Bigelow & Holmes Lucida 100dpi 100dpi bitmap fonts.
+Bigelow & Holmes Lucida 100dpi bitmap fonts.
 
 This package includes Unicode fonts as well as in ISO-8859-1,
 ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-9, ISO-8859-10,
