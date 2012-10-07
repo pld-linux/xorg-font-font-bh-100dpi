@@ -2,7 +2,7 @@ Summary:	Bigelow & Holmes Lucida 100dpi bitmap fonts
 Summary(pl.UTF-8):	Fonty bitmapowe 100dpi Bigelow & Holmes Lucida
 Name:		xorg-font-font-bh-100dpi
 Version:	1.0.3
-Release:	1
+Release:	2
 License:	distributable (see COPYING)
 Group:		Fonts
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-bh-100dpi-%{version}.tar.bz2
