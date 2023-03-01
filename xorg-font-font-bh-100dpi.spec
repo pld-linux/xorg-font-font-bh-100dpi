@@ -1,21 +1,23 @@
 Summary:	Bigelow & Holmes Lucida 100dpi bitmap fonts
 Summary(pl.UTF-8):	Fonty bitmapowe 100dpi Bigelow & Holmes Lucida
 Name:		xorg-font-font-bh-100dpi
-Version:	1.0.3
-Release:	2
+Version:	1.0.4
+Release:	1
 License:	distributable (see COPYING)
 Group:		Fonts
-Source0:	http://xorg.freedesktop.org/releases/individual/font/font-bh-100dpi-%{version}.tar.bz2
-# Source0-md5:	9f11ade089d689b9d59e0f47d26f39cd
-URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+Source0:	https://xorg.freedesktop.org/releases/individual/font/font-bh-100dpi-%{version}.tar.xz
+# Source0-md5:	d8b8371b41640dba6cf4bbad69a423c3
+URL:		https://xorg.freedesktop.org/
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-app-bdftopcf
 BuildRequires:	xorg-app-mkfontdir
 BuildRequires:	xorg-app-mkfontscale
-BuildRequires:	xorg-font-font-util >= 1.2
-BuildRequires:	xorg-util-util-macros >= 1.3
+BuildRequires:	xorg-font-font-util >= 1.4
+BuildRequires:	xorg-util-util-macros >= 1.20
+BuildRequires:	xz
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/100dpi
 # contains useful aliases for these fonts
@@ -45,8 +47,10 @@ ISO-8859-13, ISO-8859-14 i ISO-8859-15.
 %{__autoconf}
 %{__automake}
 %configure \
+%if "%{_gnu}" != "-gnux32"
 	--build=%{_host} \
 	--host=%{_host} \
+%endif
 	--with-fontdir=%{_fontsdir}/100dpi
 
 %{__make}
@@ -68,5 +72,5 @@ fontpostinst 100dpi
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog README
+%doc COPYING ChangeLog LU_LEGALNOTICE README.md
 %{_fontsdir}/100dpi/lu*.pcf.gz
